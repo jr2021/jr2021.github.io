@@ -1,0 +1,63 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0rem;
+    font-family: monospace;
+}
+
+#top-line {
+    height: 1rem;
+    width: 100%;
+    background-color: rgb(204, 72, 72);
+}
+
+#header {
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+}
+
+#blurb {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#bottom-line {
+    height: 1rem;
+    width: 100%;
+    background-color: rgb(204, 72, 72);
+}
+
+#primary-navigation {
+    display: flex;
+    align-items: center;
+}
+
+#primary-navigation a {
+    border: thick solid  rgb(204, 72, 72);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-right: auto;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: background-color .5s, color .5s;
+}
+
+#primary-navigation a:hover {
+    background-color:  rgb(204, 72, 72);
+    color: rgb(255, 255, 255);
+}
+
+#copyright {
+   font-size: 2.5rem;
+   text-align: center;
+   margin-top: 10rem; 
+}
+
