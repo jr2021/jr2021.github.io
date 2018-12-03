@@ -10,7 +10,7 @@ body {
 #top-line {
     height: 1rem;
     width: 100%;
-    background-color: #dd7e6b;
+    background-color: #b6a997;
 }
 
 #header {
@@ -29,7 +29,7 @@ body {
 #bottom-line {
     height: 1rem;
     width: 100%;
-    background-color: #dd7e6b;
+    background-color: #b6a997;
 }
 
 #primary-navigation {
@@ -38,7 +38,7 @@ body {
 }
 
 #primary-navigation a {
-    border: thick solid #dd7e6b;
+    border: thick solid #b6a997;
     border-radius: 1rem;
     padding: 1rem;
     margin-right: auto;
@@ -51,7 +51,7 @@ body {
 }
 
 #primary-navigation a:hover {
-    background-color: #dd7e6b;
+    background-color: #b6a997;
     color: rgb(255, 255, 255);
 }
 
