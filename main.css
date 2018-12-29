@@ -1,63 +1,33 @@
-html {
-    font-size: 62.5%;
-}
 
 body {
-    margin: 0rem;
     font-family: monospace;
+    color: rgba(0, 0, 0, .75);
+    background-color: rgb(255, 255, 255);
 }
-
-#top-line {
-    height: 1rem;
-    width: 100%;
-    background-color: #b6a997;
-}
-
 #header {
-    font-size: 10rem;
+    font-size: 10vh;
     text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 2.5rem;
 }
-
+#headshot {
+    width: 12.5%;
+    border-radius: 100%;
+    display: block;
+    margin: 10vh auto;
+}
 #blurb {
-    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 5rem;
 }
-
-#bottom-line {
-    height: 1rem;
-    width: 100%;
-    background-color: #b6a997;
-}
-
-#primary-navigation {
+#icons {
     display: flex;
-    align-items: center;
 }
-
-#primary-navigation a {
-    border: thick solid #b6a997;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-right: auto;
-    margin-top: 2.5rem;
-    margin-left: auto;
-    font-size: 2.5rem;
+#icons a {
+    text-align: center;
+    width: 33%;
+    margin: 10vh auto;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    transition: background-color .5s, color .5s;
+    color: rgba(0, 0, 0, .75);
+    transition: opacity .5s;
 }
-
-#primary-navigation a:hover {
-    background-color: #b6a997;
-    color: rgb(255, 255, 255);
+#icons a:hover {
+    opacity: .565;
 }
-
-#copyright {
-   font-size: 2.5rem;
-   text-align: center;
-   margin-top: 10rem; 
-}
-
