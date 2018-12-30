@@ -9,10 +9,10 @@ body {
     text-align: center;
 }
 #headshot {
-    width: 12.5%;
+    height: 25vh;
     border-radius: 100%;
     display: block;
-    margin: 10vh auto;
+    margin: auto;
 }
 #blurb {
     text-align: center;
@@ -22,8 +22,7 @@ body {
 }
 #icons a {
     text-align: center;
-    width: 33%;
-    margin: 10vh auto;
+    margin: auto;
     text-decoration: none;
     color: rgba(0, 0, 0, .75);
     transition: opacity .5s;
