@@ -1,38 +1,35 @@
-
-body {
-    font-family: monospace;
-    color: rgba(0, 0, 0, .75);
-    background-color: rgb(255, 255, 255);
-}
-#header {
-    font-size: 10vh;
-    text-align: center;
-}
-#headshot {
-    width: 20vh;
-    border-radius: 100%;
-    display: block;
-    margin: auto;
-}
-#blurb {
-    text-align: center;
-}
-#icons {
-    display: flex;
-    text-align: center;
-}
-#icons a {
-    margin: auto;
-    color: rgba(0, 0, 0, .75);
-    transition: color .5s;
-}
-#icons a:hover {
-    color: rgba(0, 255, 0, .75);
-}
-#directions {
-    display: flex;
-    text-align: center;
-}
-#directions h5 {
-    margin: auto;
-}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jake Robertson</title>
+		<link rel=stylesheet href="main.css">
+		<meta name='viewport' content='width=device-width initial-scale=1'>
+	</head>
+	<body>
+		<div>
+			<div>
+                <h1 id="header">Jake Robertson</h1>
+				<img id="headshot" src="headshot.jpeg">
+				<h3 id="blurb">2nd year Software Development Student at the Queen's University School of Computing.</h3>
+			</div>
+		</div>
+		<div id="icons">
+			<a href="resume.pdf"><img><i data-feather="user"></i><img></a>
+			<a href="https://github.com/jr2021"><img><i data-feather="github"></i><img></a>
+			<a href="https://www.linkedin.com/in/jr2021/"><img><i data-feather="linkedin"></i><img></a>
+			<a href="mailto:jake.robertson@queensu.ca"><img><i data-feather="mail"></i></img></a>
+			<a href="tel:6178938734"><img><i data-feather="phone"></i></img></a>
+		</div>
+		<div id="directions">
+			<h5>*click me*</h5>
+			<h5>*click me*</h5>
+			<h5>*click me*</h5>
+			<h5>*click me*</h5>
+			
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		  </script>
+	</body>
+</html>
