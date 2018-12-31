@@ -9,7 +9,7 @@ body {
     text-align: center;
 }
 #headshot {
-    height: 25vh;
+    width: 20vh;
     border-radius: 100%;
     display: block;
     margin: auto;
@@ -19,14 +19,20 @@ body {
 }
 #icons {
     display: flex;
+    text-align: center;
 }
 #icons a {
-    text-align: center;
     margin: auto;
-    text-decoration: none;
     color: rgba(0, 0, 0, .75);
-    transition: opacity .5s;
+    transition: color .5s;
 }
 #icons a:hover {
-    opacity: .565;
+    color: rgba(0, 255, 0, .75);
+}
+#directions {
+    display: flex;
+    text-align: center;
+}
+#directions h5 {
+    margin: auto;
 }
