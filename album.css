@@ -1,5 +1,5 @@
 :root {
-  --jumbotron-padding-y: 5rem;
+  --jumbotron-padding-y: 3.5rem;
 }
 @media (min-width: 768px) {
   .jumbotron {
