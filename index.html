@@ -9,32 +9,45 @@
     <link href="album.css" rel="stylesheet">
   </head>
   <body>
-    <div class="jumbotron">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Personal Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <p class="dropdown-item">Toronto, Ontario, Canada</p>
+                <p class="dropdown-item">jake.robertson@queensu.ca</p>
+                <p class="dropdown-item">617-893-8734</p>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/jr2021/">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jr2021">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.pdf">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron" style="background-color: white;">
       <div class="container">
-        <h1 class="display-3">I'm Jake Robertson,</h1>
+        <br>
+        <br>
+        <img src="headshot.jpeg" width=100% style="border-radius: 100%">
         <hr>
-        <p class="text-muted">an incoming 3<sup>rd</sup> year Computer Science student at the <a href="http://www.cs.queensu.ca">Queen's University School of Computing</a>. Holding Dual Citizenship of the United States of America and Canada, I'm seeking Software Engineering internship opportunities for the Summer of 2020!</p>
-        <a class="btn btn-primary" href="resume.pdf" role="button">Resume</a>
+        <h1 class="display-3">I'm Jake Robertson,</h1>
+        <p class="text-muted"><i>an incoming 3<sup>rd</sup> year Computer Science student at the <a href="http://www.cs.queensu.ca">Queen's University School of Computing</a> and Exchange student at the <a href="https://www.helsinki.fi/en/computer-science">University of Helsinki Department of Computer Science</a>. Social impact driven, creative-minded, and entrepreneurial, I'm passionate about people-focused software solutions. Holding Dual Citizenship in the United States of America and Canada, I'm seeking Software Engineering internship opportunities for the Summer of 2020!</i></p>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <h3 class="display-4">Social Media</h3>
-          <ul class="list-group">
-            <li class="list-group-item"><a href="https://www.linkedin.com/in/jr2021/">LinkedIn</a></li>
-            <li class="list-group-item"><a href="https://github.com/jr2021">GitHub</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <h3 class="display-4">Contact Me</h3>
-          <ul class="list-group">
-            <li class="list-group-item">jake.robertson@queensu.ca</li>
-            <li class="list-group-item">617-893-8734</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <br>
+    </div>  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
