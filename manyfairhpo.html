@@ -83,6 +83,9 @@
   <article>
     <h1>ManyFairHPO: A Human-in-the-Loop Fairness-Aware Model Selection Framework for Complex Fairness Objective Landscapes</h1>
 
+    <a href="">arXiv</a>
+    <hr>
+
     <p>Fairness in artificial intelligence is a complex and evolving challenge that continues to spark intense debate and research in the tech community. As we grapple with the ethical implications of AI decision-making, a new approach called ManyFairHPO has emerged, offering a fresh perspective on this critical issue. While not a silver bullet, this innovative framework presents an intriguing way to navigate the multifaceted nature of algorithmic fairness. By considering multiple, often conflicting notions of fairness simultaneously, ManyFairHPO opens up exciting possibilities for creating more nuanced and context-aware AI systems.</p>
 
     <h2 class="blog-header">The Fairness Dilemma</h2>
@@ -91,11 +94,18 @@
 
     <h2 class="blog-header">Introducing ManyFairHPO</h2>
 
+    <div class="p-3 p-md-5 mb-4 text-dark rounded bg-light row">
+      <div class="col-md-12 px-0">
+        
+        <img src="flowchart_aies_ternary.jpg" height="500" role="img" class=" mx-auto d-block" preserveAspectRatio="xMidYMid slice" preserveAspectRatio="xMidYMid slice" focusable="" border-radius=50% overflow=hidden>
+      </div>
+    </div>
+
     <p>Enter ManyFairHPO, a novel framework developed to address this very challenge. Unlike traditional approaches that focus on a single fairness metric, ManyFairHPO treats fairness as a many-objective optimization problem. Here's how it works:</p>
 
     <ol>
         <li><strong>Many-Objective Optimization</strong>:  The framework begins by exploring trade-offs between accuracy and multiple fairness metrics simultaneously. This process generates Pareto Fronts – sets of solutions where improving one objective (e.g., accuracy) without worsening another (e.g., a fairness metric) is impossible. These Pareto Fronts provide a comprehensive view of the trade-offs between different performance and fairness metrics, allowing practitioners to understand the full spectrum of possible solutions.</li>
-        <li><strong>Fairness Metric Selection &amp; Risk Identification</strong>: In this crucial step, the goal is to assign weights to different fairness metrics based on their relative importance. This process involves two key inputs: stakeholder preferences and exploratory analysis. Stakeholders from various backgrounds can express their priorities, ensuring that different perspectives are considered. Simultaneously, practitioners conduct an exploratory analysis of the Pareto Fronts to identify conflicts between fairness metrics specific to the problem at hand. This analysis helps uncover potential risks associated with different model choices, such as unintended biases or negative feedback loops. By combining stakeholder input with data-driven insights, this step aims to create a nuanced understanding of which fairness metrics are most critical for the specific context.</li>
+        <li><strong>Fairness Metric Selection &amp; Risk Identification</strong>: In this crucial step, the goal is to assign weights to different fairness metrics based on their relative importance. This process involves two key inputs: stakeholder preferences and exploratory analysis. Stakeholders from various backgrounds can express their priorities, ensuring that different perspectives are considered. Simultaneously, practitioners conduct an exploratory analysis of the Pareto Fronts to identify conflicts between fairness metrics specific to the problem at hand. This analysis helps uncover potential risks associated with different model choices, such as unintended biases or negative feedback loops. By combining stakeholder input with data-driven insights, this step aims to create a nuanced understanding of which fairness metrics are most critical for the specific context, while also identifying potential negative downstream consequences that could arise from prioritizing certain metrics over others.</li>
         <li><strong>Fairness-Aware Model Selection</strong>: Building on the insights from the previous steps, this final stage enables users to select models that best balance multiple objectives. With the weighted fairness metrics determined in step 2, practitioners can now navigate the Pareto Fronts more effectively. They can choose models that not only perform well but also align with the prioritized fairness criteria and mitigate identified risks. This approach ensures that the selected model reflects a carefully considered balance between performance, various notions of fairness, and potential real-world impacts.</li>
     </ol>
 
@@ -104,24 +114,20 @@
     <p>ManyFairHPO isn't just another technical improvement – it represents a fundamental shift in how we approach fairness in AI. Here's why it's so important:</p>
 
     <ul>
-        <li><strong>Nuanced Fairness</strong>: By considering multiple fairness metrics, ManyFairHPO allows for more nuanced and context-appropriate solutions.</li>
+        <li><strong>Context Awareness</strong>: By considering multiple fairness metrics, ManyFairHPO allows for more nuanced and context-appropriate solutions.</li>
         <li><strong>Risk Mitigation</strong>: The framework helps identify and mitigate potential downstream risks associated with fairness trade-offs.</li>
         <li><strong>Stakeholder Alignment</strong>: Its human-in-the-loop approach facilitates better alignment between technical solutions and diverse stakeholder priorities.</li>
         <li><strong>Transparency</strong>: Throughout the process, ManyFairHPO provides interpretable results, increasing transparency in decision-making.</li>
     </ul>
 
-    <h2 class="blog-header">Real-World Impact</h2>
-
-    <p>To demonstrate the practical value of ManyFairHPO, the researchers applied it to a law school admissions scenario. They were able to balance competing objectives from different stakeholders while avoiding the risk of creating a "self-fulfilling prophecy" through biased admissions decisions. This case study highlights how ManyFairHPO can navigate complex real-world fairness challenges.</p>
-
+  
     <h2 class="blog-header">Looking Ahead</h2>
 
     <p>While ManyFairHPO represents a significant advancement, it also opens up new avenues for research and development:</p>
 
     <ul>
-        <li>Expanding the framework to include more bias mitigation techniques</li>
-        <li>Further socio-technical studies on fairness metric conflicts and their contextual relevance</li>
-        <li>Exploring how ManyFairHPO can be integrated into existing AI development pipelines</li>
+        <li><strong>Expanding the optimization space</strong>: Currently, ManyFairHPO operates within the constraints of hyperparameter optimization, which limits the range of achievable fairness metric and performance values. A promising direction for improvement is to incorporate a wider array of bias mitigation techniques and their associated hyperparameters into the optimization process. This expansion would not only enhance ManyFairHPO's performance but also provide deeper insights into fairness metric conflicts. By exploring a broader solution space, we could uncover more nuanced trade-offs and potentially find solutions that better balance multiple fairness criteria while maintaining high performance.</li>
+        <li><strong>Further socio-technical studies on fairness metric conflicts and their contextual relevance</strong>: As we continue to apply ManyFairHPO to diverse real-world scenarios, we'll gain valuable insights into how fairness metric conflicts manifest in different contexts. This research could lead to a better understanding of which conflicts are most critical in specific domains and help develop guidelines for prioritizing fairness metrics in various applications.</li>
     </ul>
 
     <h2 class="blog-header">The Bottom Line</h2>
